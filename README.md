@@ -64,6 +64,8 @@ yandex_storage_bucket.my_bucket: Creation complete after 5s [id=suntsovvv-2024-1
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
+![Снимок 1](https://github.com/user-attachments/assets/26cc1013-ce3e-41b6-87e7-71eb0c300495)
+
 2. Создать группу ВМ в public подсети фиксированного размера с шаблоном LAMP и веб-страницей, содержащей ссылку на картинку из бакета:
 
 
@@ -287,7 +289,8 @@ yandex_compute_instance_group.ig-1: Creation complete after 5m29s [id=cl163c56t5
 
 Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
  ```
- 
+ ![Снимок2](https://github.com/user-attachments/assets/e6a5758f-d061-4bdf-bd2e-3765a1dfec46)
+
 3. Подключить группу к сетевому балансировщику:
  - Создать сетевой балансировщик.
  - Проверить работоспособность, удалив одну или несколько ВМ.   
@@ -595,13 +598,19 @@ picture_key = "picture.jpg"
 user@microk8s:~/clopro-homeworks-2$ 
 ```
 Проверяю:   
-   
+![Снимок4](https://github.com/user-attachments/assets/98ca3a8f-7a7b-435f-ba7a-d669f2192f75)
+
+![Снимок3](https://github.com/user-attachments/assets/f5892cb2-4655-4417-a1cf-e2f5233123b4)
+
 Удаляю две вм и проверяю снова:   
-   
+![Снимок5](https://github.com/user-attachments/assets/6eaab286-75e5-4967-aa96-2ccff28b9736)
+![Снимок6](https://github.com/user-attachments/assets/5280ca78-d7a3-4b45-870a-d9cf9898a18f)
+
 
 ВМ пресоздаются:   
+![Снимок7](https://github.com/user-attachments/assets/6c7f97f8-8aaf-4ac1-9071-7b7b66bfcca7)
 
-
+Ссылка на манифесты - https://github.com/suntsovvv/clopro-homeworks-2/tree/main
 
 4. (дополнительно)* Создать Application Load Balancer с использованием Instance group и проверкой состояния.
 
